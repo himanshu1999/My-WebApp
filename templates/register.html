@@ -1,0 +1,140 @@
+<html>
+    <head>
+        <title>REGISTER| MongoFLask Result App</title>
+        <style>
+            *{
+                margin: 0;
+            }
+            .i1{
+                color: white;
+                font-size: 50px;
+                margin-left: 700px;
+            }
+            .top{
+                
+                background-color:rgba(247, 7, 7, 0.986);
+                text-align: center;
+            }
+
+            form{
+                margin-top: 100px;
+                color:rgb(10, 225, 236);
+                font-size: 40px;
+            }
+            .bg{
+               background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRyvgnoir36mfeOLCV5H591L-tpreH1eg55g&usqp=CAU");
+               background-repeat: no-repeat;
+               background-size: 100% 100%;
+            }
+        
+            
+           .sub{
+                background-color: rgb(250, 27, 11);
+                border-radius: 40px;
+                width: 150px;
+                margin-top: 20px;
+                font-family: monospace;
+                font-size: 25px;
+                color: white;
+           }
+           .sub:hover{
+               transform: scale(0.96);
+               color:black;
+               background-color: yellow;
+           }
+            
+            .left{
+                margin-left: 50px;;
+            }
+            tr,th,td{
+                font-family:'Times New Roman', Times, serif;
+                background-image: url("https://wallpaperaccess.com/full/1900851.png");
+                border: 2px solid black;
+                border-collapse: collapse;
+                padding: 15px;
+                text-align: center;
+                border: solid rgb(8, 147, 247);
+                color:rgb(255, 255, 255);
+            }
+
+            .name{
+                color:white;
+                font-size: 25px;
+                
+            }
+            .input{
+                text-align: center;
+                height: 35px;
+                width: 250px;
+                border-radius:5px;
+                background:white;
+                color:black;
+                font-family: sans-serif;
+                font-size: 20px;
+            }
+            .i1,.i2{
+                display: inline-block;
+                vertical-align: top;
+            }
+            .i2{
+                margin-left: 500px;
+                background-color: rgb(195, 228, 46);
+                margin-top: 13px;
+                border-radius: 20px;
+                padding: 8px;
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+            }
+            .i2 a{
+                text-decoration: none;
+                color:black;
+            }
+           
+        </style>
+    </head>
+    <body class="bg">
+        <div class="top">
+            <h1 class="i1">REGISTER</h1>
+            <p class="i2"><a href="/index">Result</a></p>
+        </div>
+        <center>
+           
+            <form method="POST" action="/submit" enctype="multipart/form-data"> 
+                <table border="4"> 
+                    <tr> 
+                        <td class="name">Name : </td> 
+                        <td> 
+                            <input class="input" type="text" name="name" size="25" > 
+                        </td> 
+                    </tr> 
+                    <tr> 
+                        <td class="name">Roll No : </td> 
+                        <td><input  class="input" type="number" name="rollno" size="25" ></td> 
+                    </tr> 
+                    <tr> 
+                        <td class="name">Mobile Number : </td> 
+                        <td><input  class="input"  type="number" name="mobile" size="25" ></td> 
+                    </tr> 
+                    <tr> 
+                        <td class="name">Physics : </td> 
+                        <td><input  class="input" type="number" name="physics" size="25" ></td> 
+                    </tr> 
+                    <tr> 
+                        <td class="name">Chemistry :</td> 
+                        <td><input  class="input" type="number" name="chemistry" size="25" ></td> 
+                    </tr> 
+                    <tr> 
+                        <td class="name">Maths:</td> 
+                        <td><input  class="input" type="number" name="maths" size="25" ></td> 
+                    </tr>
+                    <tr>
+                      
+                </table> 
+                <p> 
+                    <input class="sub" type="submit" value="submit" name="b1"> 
+                </p> 
+            </form> 
+           
+        </center>
+    </body>
+</html>

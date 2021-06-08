@@ -1,0 +1,145 @@
+<html>
+    <head>
+        <title>RESULT| MongoFLask Result App</title>
+        <style>
+            *{
+                margin: 0;
+            }
+            table{
+                
+                text-align: center;
+                border: 8px solid black;
+            }
+            table td,th{
+                background-image: url("https://wallpaperaccess.com/full/1900851.png");
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                border: 2px solid white;
+                border-collapse: collapse;
+                padding: 15px;
+                text-align: center;
+            }
+            .top{
+                
+                background-color:rgba(247, 7, 7, 0.986);
+                text-align: center;
+            }
+            .i1{
+                color: white;
+                font-size: 50px;
+                margin-left: 700px;
+            
+                
+                }
+            form{
+                margin-top: 135px;
+                color:white;
+                font-size: 20px;
+            }
+            .bg{
+              background-image: url("https://images.all-free-download.com/images/graphicthumb/rippled_wall_background_01_hd_pictures_169887.jpg");
+               background-repeat: no-repeat;
+               background-size: 100% 100%;
+            }
+            
+            .c{
+                display: inline-block;
+                color: black;
+                margin-top: 400px;
+                vertical-align: top;
+            }
+            .left{
+                margin-left: 50px;;
+            }
+            .i1,.i2{
+                display: inline-block;
+                vertical-align: top;
+            }
+            .i2{
+                margin-left: 500px;
+                background-color: rgb(195, 228, 46);
+                margin-top: 13px;
+                border-radius: 20px;
+                padding: 8px;
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+            }
+            .i2 a{
+                text-decoration: none;
+                color:black;
+            }
+            .name{
+                color: white;
+                font-family:fantasy;
+                font-size: 28px;
+                background-color: rgb(170, 170, 252);
+            }
+            .roll{
+                color: white;
+                font-family:fantasy;
+                font-size: 28px;
+                background-color: rgb(170, 170, 252);
+            }
+            .input{
+                height: 45px;
+                width: 250px;
+                 font-size: 25px;
+                 font-family: serif;
+                 text-align: center;
+                 border-radius: 15px;
+             }
+            .input2{
+                height: 45px;
+                width: 250px;
+                font-size: 25px;
+                font-family: serif;
+               text-align: center;
+                border-radius: 15px;
+            }
+            .sub{
+                background-color: yellow;
+                border-radius: 40px;
+                width: 150px;
+                margin-top: 30px;
+                padding:9px;
+                font-family:fantasy;
+                font-size: 25px;
+            }
+            .sub:hover{
+                transform: scale(.95);
+                color:white;
+                background:yellowgreen;
+
+            }
+            
+        </style>
+    </head>
+    <body class="bg">
+        <div class="top">
+            <h1 class="i1">RESULT</h1>
+            <p class="i2"><a href="/register">ADMIN</a></p>
+        </div>
+       
+        <center>
+            <form action="/result" method="GET">
+                <table border="5" class="table"> 
+                <tr> 
+                   <td class="name"> Name :</td>
+                <td>
+                   <input class="input" type="text" name = "name" required>
+                </td>
+                </tr><br> 
+
+                <tr>
+                  <td class="roll"> Roll No :</td>
+                  <td>
+                  <input class="input2" type="number" name="roll" required>
+                  </td>
+                  </tr><br>
+                  </table>
+                <input class="sub" type="submit">
+            </form>
+            
+        </center>
+    </body>
+</html>
